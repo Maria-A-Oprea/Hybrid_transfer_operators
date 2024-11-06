@@ -1,13 +1,13 @@
 ## Hybrid infinitesimal generators of the Transfer operator
 
 The hybrid transfer operator for a hybrid dynamical system 
-$$  \begin{cases}
-            \dot{x} = X(x), & x\not\in \mathcal{S}, \\
-            x^+ = \Delta(x^-), & x\in\mathcal{S}.
-        \end{cases}
-$$ wuth hybrid flow $\varphi^\mathcal{H}$, 
+$$ 
+            \dot{x} = X(x),  x\not\in \mathcal{S}
+            $$ $$
+            x^+ = \Delta(x^-),  x\in\mathcal{S}.
+        $$ wuth hybrid flow $\varphi^\mathcal{H}$, 
  is defined by the equation
- $\int_E P_t^\mathcal{H}f \, d\mu = \int_{\varphi_{-t}^\mathcal{H} (E)}\ f \, d\mu \qquad \t{for all } E \subseteq M$. The infinitesimal generator is defined by:
+ $\int_E P_t^\mathcal{H}f \, d\mu = \int_{\varphi_{-t}^\mathcal{H} (E)}\ f \, d\mu \qquad \text{for all } E \subseteq M$. The infinitesimal generator is defined by:
  $$A^\mathcal{H}f = \lim_{\Delta t \to 0}\frac{P_{t + \Delta t}^\mathcal{H}f - P_{t}^\mathcal{H}f}{\Delta t}$$
 
  In this project we write code to find a formula for $u(t, x) = P_t f(x)$ through the PDE that the infinitesimal generator has to satisfy i.e.
@@ -22,12 +22,13 @@ $$ wuth hybrid flow $\varphi^\mathcal{H}$,
     \dot{p} = -mg$ and impacts occur when the ball strikes the ground ($x = 0$), and the reset map is $\Delta(0, p) = (0, -p)$. 
 
   ### 2. The redued chaplygin sleigh
-  \begin{tabular}{lcl}
-        Continuous: & \hspace{5mm} & Discrete: \\[1ex]
-        $\ds \dot v = a\omega^2$ & & $\ds v^+ = v^-$ \\[1ex]
-        $\ds \dot\omega = -\frac{ma}{I + ma^2}v\omega$ & & $\ds \omega^+ = -\omega^-$ \\[2ex]
-        $\ds \dot \theta = \omega $ & & $\ds \theta^+ = \theta^-$. \\[1ex]
-    \end{tabular} 
+  | Continuous | Discrete|
+  | --------- | ---------|
+  |$\dot v = a\omega^2$ | $v^+ = v^-$ |
+  | $\dot\omega = -\frac{ma}{I + ma^2}v\omega$ | $\omega^+ = -\omega^-$ |
+  | $\dot \theta = \omega$ | $\theta^+ = \theta^-$ |
+
+
 
   ### 3. Matrix groups 
 
@@ -42,12 +43,12 @@ $$ wuth hybrid flow $\varphi^\mathcal{H}$,
         \dot{s} = & \ \mu - \mu s - (\beta - \delta) si\\
         \dot{i} = & \ \beta  si + \delta i^2 - (\gamma + \mu + \delta )i
     \end{split}
-    \qquad \t{if } i \neq\alpha; \qquad \qquad 
+    \qquad \text{if } i \neq\alpha; \qquad \qquad 
     \begin{split}
         s^+ = & \ s^-\\
         i^+ = & \ (1 -f)i^-
     \end{split}
-     \qquad \t{if } i  = \alpha,
+     \qquad \text{if } i  = \alpha,
 \end{align*}
 
 
